@@ -19,22 +19,44 @@ An Obsidian community plugin that copies the active Markdown file's relative pat
 - Normalizes backslashes (`\\`) to `/`.
 - Copies directly to clipboard and shows an Obsidian notice.
 
-## Build
+## Build and Install (local)
 
-1. Install dependencies:
+You only need to copy the **built output** plus the manifest into your vault plugin folder.
+
+1. Install dependencies (one-time):
 
    ```bash
    npm install
    ```
 
-2. Build plugin:
+2. Build:
 
    ```bash
    npm run build
    ```
 
-3. Copy `manifest.json`, `main.js`, and any assets to your vault plugin folder:
+   This compiles `main.ts` into `main.js` in the project root.
 
+3. Create plugin folder in your vault:
+
+   ```bash
+   mkdir -p "<vault>/.obsidian/plugins/copy-path-line-range"
    ```
-   <vault>/.obsidian/plugins/copy-path-line-range/
+
+4. Copy these files into that folder:
+
+   - `manifest.json`
+   - `main.js`
+
+   Example:
+
+   ```bash
+   cp manifest.json main.js "<vault>/.obsidian/plugins/copy-path-line-range/"
    ```
+
+5. In Obsidian: **Settings → Community plugins → Reload plugins** (or restart Obsidian), then enable **Copy Path Line Range**.
+
+## Development notes
+
+- Source file you edit: `main.ts`
+- Generated file Obsidian loads: `main.js`
