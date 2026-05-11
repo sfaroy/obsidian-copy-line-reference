@@ -35,7 +35,7 @@ You only need to copy the **built output** plus the manifest into your vault plu
    npm run build
    ```
 
-   This compiles `main.ts` into `main.js` in the project root.
+   This bundles `main.ts` into `main.js` (CommonJS) for Obsidian plugin loading.
 
 3. Create plugin folder in your vault:
 
