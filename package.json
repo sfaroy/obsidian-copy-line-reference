@@ -4,8 +4,8 @@
   "description": "Obsidian plugin to copy file path with selected line range.",
   "main": "main.js",
   "scripts": {
-    "build": "tsc -noEmitOnError false --outDir .",
-    "check": "tsc --noEmit"
+    "build": "tsc -p . --noEmitOnError false",
+    "check": "tsc -p . --noEmit"
   },
   "keywords": [
     "obsidian",
