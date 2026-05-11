@@ -56,6 +56,25 @@ You only need to copy the **built output** plus the manifest into your vault plu
 
 5. In Obsidian: **Settings → Community plugins → Reload plugins** (or restart Obsidian), then enable **Copy Path Line Range**.
 
+## Community Submission Checklist
+
+Before opening the community plugin submission PR:
+
+1. Ensure `manifest.json` version and `package.json` version match.
+2. Update `versions.json` with the same version and minimum app version.
+3. Run:
+
+   ```bash
+   npm run check
+   npm run build
+   ```
+
+4. Create a GitHub release tag (for example `1.0.0`) and attach:
+   - `manifest.json`
+   - `main.js`
+   - `styles.css` (only if you add styling later)
+5. Submit the plugin to the Obsidian community plugins repo following their contribution guide.
+
 ## Development notes
 
 - Source file you edit: `main.ts`
