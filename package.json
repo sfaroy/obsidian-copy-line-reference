@@ -1,0 +1,21 @@
+{
+  "name": "copy-path-line-range",
+  "version": "1.0.0",
+  "description": "Obsidian plugin to copy file path with selected line range.",
+  "main": "main.js",
+  "scripts": {
+    "build": "node esbuild.config.mjs --production",
+    "dev": "node esbuild.config.mjs",
+    "check": "tsc -p . --noEmit"
+  },
+  "keywords": [
+    "obsidian",
+    "plugin"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.23.1",
+    "obsidian": "latest",
+    "typescript": "^5.5.4"
+  }
+}

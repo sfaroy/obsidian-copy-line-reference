@@ -1,0 +1,10 @@
+{
+  "id": "copy-path-line-range",
+  "name": "Copy Path Line Range",
+  "version": "1.0.0",
+  "minAppVersion": "1.5.0",
+  "description": "Copy the active file relative path with selected line range.",
+  "author": "Roee Sfaradi",
+  "authorUrl": "https://github.com/sfaroy",
+  "isDesktopOnly": false
+}
